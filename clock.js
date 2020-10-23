@@ -18,7 +18,13 @@ function minuteRotation() {
         minutes.style.transform = 'rotate(' +deg + "deg)";
             deg=(deg +6) % 360 
     }, 60000);
-} minuteRotation();
+} minuteRotation(); 
+function hourRotation() {
+    setInterval(function() {
+        hours.style.transform = 'rotate(' +deg + "deg)";
+            deg=(deg +6) % 360
+    }, 3600000)
+} hourRotation();
 
 
 // function secondRotation(secTick) {
