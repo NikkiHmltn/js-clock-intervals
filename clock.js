@@ -13,6 +13,12 @@ setInterval(function() {
 }
 secondRotation();
 
+function minuteRotation() {
+    setInterval(function() {
+        minutes.style.transform = 'rotate(' +deg + "deg)";
+            deg=(deg +6) % 360 
+    }, 60000);
+} minuteRotation();
 
 
 // function secondRotation(secTick) {
